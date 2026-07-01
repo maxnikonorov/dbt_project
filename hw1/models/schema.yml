@@ -1,0 +1,27 @@
+sion: 2
+
+models:
+  - name: stg__smartphones
+    description: "Нормализованная таблица смартфонов и их характеристик"
+
+  - name: int__smartphones_combination
+    description: "Агрегированные данные по комбинациям процессоров и аккумуляторов"
+    columns:
+      - name: processor_brand
+        tests:
+          - not_null
+      - name: num_cores
+        tests:
+          - not_null
+      - name: processor_speed
+        tests:
+          - not_null
+      - name: battery_capacity
+        tests:
+          - not_null
+
+  - name: mart__top_10_combinations
+    description: "Витрина данных: Топ 10 популярных комбинаций железа смартфонов"
+
+  - name: mart__top_10_processors
+    description: "Витрина данных: Топ 10 брендов процессоров по популярности"

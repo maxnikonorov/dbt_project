@@ -1,0 +1,51 @@
+[0m14:09:30.632832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cd22120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10debb610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10debb890>]}
+
+
+============================== 14:09:30.635275 | bbd803ad-88ee-4630-b7c9-c9a8c8bcf270 ==============================
+[0m14:09:30.635275 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:09:30.635573 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'profiles_dir': '/Users/maxim/.dbt', 'warn_error': 'None', 'empty': 'None', 'partial_parse': 'True', 'target_path': 'None', 'use_experimental_parser': 'False', 'log_path': 'logs', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'write_json': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'introspect': 'True', 'debug': 'False', 'static_parser': 'True', 'cache_selected_only': 'False', 'use_colors': 'True', 'invocation_command': 'dbt init hw1', 'no_print': 'None', 'fail_fast': 'False'}
+[0m14:09:30.640320 [debug] [MainThread]: Starter project path: /Users/maxim/Desktop/hw/dbt/dbt/venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m14:09:30.643979 [info ] [MainThread]: 
+Your new dbt project "hw1" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:09:30.644189 [info ] [MainThread]: Setting up your profile.
+[0m14:16:06.914397 [info ] [MainThread]: Profile hw1 written to /Users/maxim/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:16:06.951723 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 396.35452, "process_in_blocks": "0", "process_kernel_time": 0.172777, "process_mem_max_rss": "117473280", "process_out_blocks": "0", "process_user_time": 0.843231}
+[0m14:16:06.952948 [debug] [MainThread]: Command `dbt init` succeeded at 14:16:06.952789 after 396.36 seconds
+[0m14:16:06.953849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e4f8fc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b70dfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dfb8e20>]}
+[0m14:16:06.954816 [debug] [MainThread]: Flushing usage events
+[0m14:16:07.823553 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:16:25.098641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa96120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bc33610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bc33890>]}
+
+
+============================== 14:16:25.101487 | 2fed9fbd-4387-483a-9796-1a26280ec4b4 ==============================
+[0m14:16:25.101487 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:16:25.101808 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'static_parser': 'True', 'introspect': 'True', 'log_path': 'logs', 'target_path': 'None', 'version_check': 'True', 'quiet': 'False', 'empty': 'None', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'no_print': 'None', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/Users/maxim/.dbt', 'debug': 'False', 'partial_parse': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'printer_width': '80'}
+[0m14:16:25.112348 [info ] [MainThread]: dbt version: 1.11.11
+[0m14:16:25.112578 [info ] [MainThread]: python version: 3.13.5
+[0m14:16:25.112718 [info ] [MainThread]: python path: /Users/maxim/Desktop/hw/dbt/dbt/venv/bin/python3.13
+[0m14:16:25.112845 [info ] [MainThread]: os info: macOS-26.3-arm64-arm-64bit-Mach-O
+[0m14:16:25.143610 [info ] [MainThread]: Using profiles dir at /Users/maxim/.dbt
+[0m14:16:25.143848 [info ] [MainThread]: Using profiles.yml file at /Users/maxim/.dbt/profiles.yml
+[0m14:16:25.143986 [info ] [MainThread]: Using dbt_project.yml file at /Users/maxim/Desktop/hw/dbt/dbt/dbt_project.yml
+[0m14:16:25.144148 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m14:16:25.145611 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.08471854, "process_in_blocks": "0", "process_kernel_time": 0.118652, "process_mem_max_rss": "118620160", "process_out_blocks": "0", "process_user_time": 0.640721}
+[0m14:16:25.145839 [debug] [MainThread]: Command `dbt debug` failed at 14:16:25.145796 after 0.09 seconds
+[0m14:16:25.146018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c369ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c34f410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd29370>]}
+[0m14:16:25.146178 [debug] [MainThread]: Flushing usage events
+[0m14:16:25.758229 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,29 @@
+version: 2
+
+sources: 
+  - name: seed_data
+    description: "Исходные данные каталога телефонов из seeds"
+    schema: public
+    loaded_at_field: _dbt_loaded_at
+
+    tables:
+      - name: smartphone_cleaned_v5
+        description: "Сырой каталог телефонов"
+        identifier: smartphone_cleaned_v5
+
+        columns:
+          - name: brand_name
+            description: "Название бренда телефона"
+            tests:
+              - not_null
+
+          - name: model
+            description: "Модель телефона"
+            tests:
+              - unique
+              - not_null
+
+          - name: price
+            description: "Цена телефона"
+            tests:
+              - not_null
